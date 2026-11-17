@@ -115,6 +115,12 @@ nav a:hover{
     transform:scale(1.02);
 }
 
+#game-image img{
+
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+
 .information,
 .institution{
     background:white;
