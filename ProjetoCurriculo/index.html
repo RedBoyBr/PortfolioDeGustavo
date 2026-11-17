@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html lang="pt"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Portfólio Profissional</title> 
+        <link rel="stylesheet" href="css/estilo.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Righteous&family=Unbounded:wght@200..900&display=swap" rel="stylesheet"> 
+    </head> 
+    <body>
+        <header>
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <h1>Gustavo da Costa</h1>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">✕</a></li>
+                <li><a href="#presentation">Sobre</a></li>
+                <li><a href="#personal">Contato</a></li>
+                <li><a href="#technicalLanguages">Tecnologias</a></li>
+                <li><a href="#tools">Ferramentas</a></li>
+                <li><a href="#skills">Competências</a></li>
+                <li><a href="#languages">Idiomas</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#formation">Formação</a></li>
+                <li><a href="#experience">Experiência</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <section id="image">
+                <img src="imagens/Perfil.png" alt="Perfil">
+            </section>
+
+            <h2 id="presentation">Desenvolvedor em Formação</h2>
+            <section class="information">
+                <p> Olá, meu nome é Gustavo da Costa e sou focado na área de desenvolvimento de software e tecnologia. Tenho experiência com criação de sites, aplicações e jogos digitais, utilizando diferentes linguagens e ferramentas modernas de programação. </p> 
+                <p> Busco constantemente aprimorar minhas habilidades técnicas, desenvolver projetos criativos e adquirir experiência prática em desenvolvimento web, lógica de programação e criação de sistemas. </p> 
+                <p> Tenho facilidade para trabalhar em equipe, aprender novas tecnologias e organizar tarefas de maneira eficiente, sempre buscando entregar soluções bem estruturadas e funcionais. </p>
+            </section>
+
+            <h2 id="personal">Contato</h2>
+            <section class="information">
+                <ul>
+                    <li>Gustavo da Costa Souza</li>
+                    <li>gustavo.da.costa.264@gmail.com</li>
+                    <li>+55 41 98711-3541</li>
+                </ul>
+            </section>
+
+            <h2 id="technicalLanguages">Linguagens</h2>
+            <section class="information">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                </ul>
+            </section>
+
+            <h2 id="tools">Ferramentas</h2> 
+            <section class="information"> 
+                <ul> 
+                    <li>Visual Studio Code</li> 
+                    <li>Unity Engine</li> 
+                    <li>Godot Engine</li> 
+                    <li>Blender</li> 
+                    <li>Git & GitHub</li> 
+                </ul> 
+            </section>
+
+            <h2 id="skills">Competências</h2> 
+            <section class="information"> 
+                <ul> 
+                    <li>Desenvolvimento Web</li> 
+                    <li>Lógica de Programação</li> 
+                    <li>Resolução de Problemas</li> 
+                    <li>Trabalho em Equipe</li> 
+                    <li>Organização e Planejamento</li> 
+                    <li>Aprendizado Contínuo</li> 
+                </ul> 
+            </section>
+
+            <h2 id="languages">Idiomas</h2> 
+            <section class="information"> 
+                <ul> 
+                    <li>Português — Nativo</li> 
+                    <li>Inglês — Intermediário</li> 
+                </ul> 
+            </section>
+
+            <h2 id="projects">Projetos</h2>
+            <section class="carousel-container">
+                <button class="carousel-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="project-card" onclick="openPopup('Pac-Man - CMD', 'Desenvolvimento de uma cópia mecânica do clássico jogo Pac-Man utilizando a linguagem C++ na plataforma Code::Blocks. buscando recriar as principais mecânicas do jogo original, como movimentação do personagem, coleta de pontos, colisão com paredes e movimento inimigos, focando principalmente na lógica de funcionamento do jogo com programação simples.')">
+                            <img src="imagens/Projeto1.png">
+                            <h3>Pac-Man</h3>
+                        </div>
+                        <div class="project-card" onclick="openPopup('Modelagem de Casa - Blender', 'Criação e modelagem de um modelo de casa utilizando o software Blender. Visando desenvolver uma estrutura tridimensional detalhada, aplicando conceitos básicos de modelagem 3D, proporção, iluminação e organização de objetos dentro do ambiente virtual.')">
+                            <img src="imagens/Projeto2.png">
+                            <h3>Modelo de casa</h3>
+                        </div>
+                        <div class="project-card" onclick="openPopup('Sunlight - Unity', 'Desenvolvimento de um jogo de plataforma 2D composto por duas fases utilizando a engine Unity, visando demonstrar conhecimento na utilização de ferramentas da engine em um projeto 2D, como movimentação, colisão, construção de fases e interação com o cenário. O projeto também inclui a implementação de áudio utilizando o FMOD, permitindo a adição de efeitos sonoros e ambientação para melhorar a experiência do jogador.')">
+                            <img src="imagens/Projeto3.png">
+                            <h3>Sunlight</h3>
+                        </div>
+                        <div class="project-card" onclick="openPopup('Outro Prisioneiro - Unity', 'Desenvolvimento de um jogo 3D utilizando a engine Unity, visando demonstrar conhecimento na utilização de ferramentas da engine em um projeto tridimensional, como movimentação em 3D, física, colisão, construção de cenários e interação com objetos do ambiente. O projeto também conta com a implementação de áudio utilizando o FMOD, permitindo a adição de efeitos sonoros e ambientação dinâmica para aprimorar a experiência do jogador. O jogo tem como mecânica a inversão de Entropia que simula uma viagem no tempo onde o Jogador tem que desarmar uma bomba entre tempos.')">
+                            <img src="imagens/Projeto4.png">
+                            <h3>Outro Prisioneiro</h3>
+                        </div>
+                        <div class="project-card" onclick="openPopup('Canções do Havaí - Unity','Projeto de conclusão de curso com fins educativos desenvolvido em 2D utilizando a engine Unity, com o objetivo de conscientizar sobre a extinção de animais e os impactos causados pelas ações humanas ao meio ambiente. O projeto busca unir interatividade e aprendizado por meio de mecânicas simples, cenários temáticos e elementos visuais que representem diferentes espécies ameaçadas e seus habitats naturais. Durante o desenvolvimento, são aplicados conceitos de programação, construção de cenários 2D, animação, interfaces e implementação de sistemas interativos voltados à experiência educativa do usuário. Além de demonstrar conhecimentos técnicos na utilização da Unity, o projeto também possui caráter social e informativo, incentivando a reflexão sobre a preservação ambiental e a importância da conservação da fauna.')">
+                            <img src="imagens/Projeto5.png">
+                            <h3>Canções do Havaí</h3>
+                        </div>
+                        <div class="project-card">
+                            <a href="game.html"> <img src="imagens/Projeto6.png"> </a>
+                            <h3>Embate</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn" onclick="moveSlide(1)">&#10095;</button>
+            </section>
+
+            <h2 id="Formation">Formação</h2>
+            <section class="institution">
+                <details>
+                    <summary>Programação de Jogos Digitais + Ensino Médio</summary>
+                    <h3>Instituto Federal do Paraná</h3>
+                    <p>Fev/2023 - Dec/2026</p>
+                    <p>Técnico Integrado em Programação de Jogos Digitais</p>
+                </details>
+            </section>
+
+            <h2 id="experience">Experiência</h2> 
+            <section class="institution"> 
+                <details> 
+                    <summary>Cadastro e organização de sistemas</summary> 
+                    <h3>Cargolift — Trabalho informal</h3> 
+                    <p> Cadastro e organização de peças em catálogo digital, auxiliando na padronização de informações e no controle de dados internos. </p> 
+                </details> 
+            </section>
+
+        </main>
+        <footer>
+            <p>© Gustavo da Costa Souza — Desenvolvedor em Formação</p>
+        </footer> 
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup-box">
+                <button class="close-popup" onclick="closePopup()">✕</button>
+                <h2 id="popupTitle"></h2>
+                <p id="popupDescription"></p>
+            </div>
+        </div>
+    </body> 
+    <script src="js/script.js"></script> 
+</html>
